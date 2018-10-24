@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DOMICILIOS</string>
+
+    <string name="large_text">
+        "Somos una empresa de software Colombiana comprometida "
+        "con el desarrollo social y tecnológico, "
+        "con mas de 15 años en el mercado, durante los cuales "
+        "hemos dearrollado el mejor sfotware capaz de apoyar"
+        "todas las actividades de la comunidad médica.\n\n"
+    </string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_off">Cerrar Sesión</string>
+
+    <string name="prompt_section">Sección</string>
+    <string name="prompt_description">Descripción</string>
+    <string name="prompt_address">Dirección</string>
+    <string name="prompt_comment">Comentario</string>
+
+
+    <string name="error_network">Conexión de red no disponible</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_section">ActivitySection</string>
+    <string name="title_activity_store">Store</string>
+    <string name="normal.channel.id">channel.id.notification.normal</string>
+    <string name="normal.channel.name">Oferta normal</string>
+
+    <string name="low.channel.id">channel.id.notification.low</string>
+    <string name="low.channel.name">Oferta baja</string>
+
+</resources>

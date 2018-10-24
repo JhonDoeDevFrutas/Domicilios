@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#a20025</color>
+    <color name="colorPrimary01">#125688</color>
+    <color name="colorPrimaryDark">#E80C25</color>
+    <color name="colorPrimaryDark01">#125688</color>
+    <color name="colorAccent">#FF1D0D</color>
+    <color name="colorAccent01">#1d8ddf</color>
+
+    <color name="colorPrimaryGreen">#004d40</color>
+    <color name="colorPrimaryDarkGreen">#00251a</color>
+    <color name="colorAccentGreen">#39796b</color>
+
+    <color name="colorPrimaryGreen01">#00AA8D</color>
+    <color name="colorPrimaryDarkGreen01">#008975</color>
+    <color name="colorAccentGreen01">#00BF9A</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorOffBlack">#3d3d3d</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#a6a6a6</color>
+    <color name="colorGreyTransparent">#87a6a6a6</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="color_transparent">#B3000000</color>
+    <color name="colorGreen">#0f6534</color>
+
+    <color name="colorOverlayActionBarT">#0e0d0e</color>
+    <color name="colorOverlayActionBar">#FFFFFF</color>
+
+
+</resources>

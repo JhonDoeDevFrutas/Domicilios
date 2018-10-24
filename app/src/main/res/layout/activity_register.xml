@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ActivityRegister">
+
+    <TextView
+        android:id="@+id/txt_01"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese su numero celular"/>
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_below="@id/txt_01"
+        android:hint="313 641 0475"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_02"
+        android:layout_below="@id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/large_text"/>
+    
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/ckbRemember"
+        android:text="Remember me"
+        android:textColor="@color/colorPrimary"
+        style="@style/Material.Drawable.CheckBox"
+        android:gravity="center_vertical"
+        android:layout_below="@id/txt_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:background="@drawable/btn_config"
+        android:textColor="@drawable/btn_text"
+        android:layout_margin="18dp"
+        android:layout_below="@id/ckbRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"/>
+
+</RelativeLayout>

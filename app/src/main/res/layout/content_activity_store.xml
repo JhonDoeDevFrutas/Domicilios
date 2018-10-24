@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.view.ActivityStore"
+    tools:showIn="@layout/activity_store">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_description"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TextInputLayout"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_store"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "485887756367",
+    "firebase_url": "https://domicilios-86e61.firebaseio.com",
+    "project_id": "domicilios-86e61",
+    "storage_bucket": "domicilios-86e61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485887756367:android:56dc3a400fd95b71",
+        "android_client_info": {
+          "package_name": "jhondoe.com.domicilios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485887756367-va9rucblttf40iab6i1pdv90ndm52kms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfmRGE9uX3iTnKR7CKSLIBQ6K85d815bU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
