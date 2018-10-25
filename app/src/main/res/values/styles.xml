@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorForeground">@color/colorWhite</item>
+        <item name="android:colorForeground">@color/colorOffBlack</item>
     </style>
 
     <style name="ExpandedAppbar" parent="Base.TextAppearance.AppCompat.Title">
@@ -20,6 +20,12 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding.text</item>
     </style>
 
 </resources>

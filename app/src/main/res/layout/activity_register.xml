@@ -5,36 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.view.ActivityRegister">
+    
+    <ImageView
+        android:id="@+id/imgPhotoProfile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/duke"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/txt_01"
+        android:id="@+id/txt_user_name"
+        android:hint="@string/hint.numberMovil"
+        android:layout_below="@id/imgPhotoProfile"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingrese su numero celular"/>
+        style="@style/TextViewBase"/>
 
     <EditText
         android:id="@+id/edt_number"
-        android:layout_below="@id/txt_01"
+        android:layout_below="@id/txt_user_name"
         android:hint="313 641 0475"
         android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/txt_02"
+        android:id="@+id/txt_email"
+        android:hint="@string/large_text"
         android:layout_below="@id/edt_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/large_text"/>
-    
+        android:layout_centerHorizontal="true"
+        style="@style/TextViewBase"/>
+
     <com.rey.material.widget.CheckBox
         android:id="@+id/ckbRemember"
         android:text="Remember me"
         android:textColor="@color/colorPrimary"
         style="@style/Material.Drawable.CheckBox"
         android:gravity="center_vertical"
-        android:layout_below="@id/txt_02"
+        android:layout_below="@id/txt_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -47,5 +54,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Siguiente"/>
+
+
+    <TextView
+        android:id="@+id/txt_provider"
+        android:hint="@string/hint.provider"
+        android:layout_below="@id/btn_next"
+        android:layout_centerHorizontal="true"
+        style="@style/TextViewBase"/>
 
 </RelativeLayout>

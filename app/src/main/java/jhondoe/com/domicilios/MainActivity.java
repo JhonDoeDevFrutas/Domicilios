@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -21,9 +22,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.iid.FirebaseInstanceId;
+
+import java.util.Random;
 
 import jhondoe.com.domicilios.data.preferences.SessionPrefs;
 import jhondoe.com.domicilios.ui.view.ActivityRegister;
@@ -31,7 +36,8 @@ import jhondoe.com.domicilios.ui.view.Home;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnContinue;
+    TextView txtSlogan, txtLema;
+    ImageView imgBackground;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,34 +49,10 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Token MainActivity", FirebaseInstanceId.getInstance().getToken());
         }
 
-        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
-
-        final Intent intentLogin  = new Intent(this, ActivityRegister.class);
-        final Intent intentHome   = new Intent(this, Home.class);
-
-        Thread timer = new Thread(){
-            public void run(){
-                try {
-                    sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    // Redirección al Login
-                    if (!SessionPrefs.get(MainActivity.this).isLoggedIn()){
-                        startActivity(intentLogin);
-                    } else { // Redirección al Menu
-                        startActivity(intentHome);
-                    }
-
-                    finish();
-                    return;
-                }
-            }
-        };
-        timer.start();
-
         // Init view
         prepararUI();
+
+        startPage();
     }
 
     private void sendNotification() {
@@ -113,16 +95,75 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     private void prepararUI() {
-        btnContinue = (Button)findViewById(R.id.btn_continue);
-        btnContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startLoginPage();
-            }
-        });
 
+        imgBackground = (ImageView)findViewById(R.id.img_background);
+
+        txtSlogan   = (TextView)findViewById(R.id.txt_slogan);
+        txtLema     = (TextView)findViewById(R.id.txt_lema);
+
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/NABILA.TTF");
+        txtSlogan.setTypeface(typeface);
+        txtLema.setTypeface(typeface);
+
+        //Generador de numeros aleatorios
+        Random generadorAleatorios = new Random();
+        //genera un numero entre 1 y 5 y lo guarda en la variable numeroAleatorio
+        int numeroAleatorio = 1+generadorAleatorios.nextInt(6);
+        switch (numeroAleatorio){
+            case 1:
+                imgBackground.setImageResource(R.drawable.background01);
+                break;
+            case 2:
+                imgBackground.setImageResource(R.drawable.background02);
+                break;
+            case 3:
+                imgBackground.setImageResource(R.drawable.background03);
+                break;
+            case 4:
+                imgBackground.setImageResource(R.drawable.background04);
+                break;
+            case 5:
+                imgBackground.setImageResource(R.drawable.background05);
+                break;
+            case 6:
+                imgBackground.setImageResource(R.drawable.background06);
+                break;
+            default:
+                imgBackground.setImageResource(R.drawable.background);
+                break;
+        }
+
+        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
+        txtSlogan.startAnimation(myAnim);
+        txtLema.startAnimation(myAnim);
+
+    }
+
+    private void startPage(){
+        final Intent intentLogin  = new Intent(this, ActivityRegister.class);
+        final Intent intentHome   = new Intent(this, Home.class);
+
+        Thread timer = new Thread(){
+            public void run(){
+                try {
+                    sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    // Redirección al Login
+                    if (!SessionPrefs.get(MainActivity.this).isLoggedIn()){
+                        startActivity(intentLogin);
+                    } else { // Redirección al Menu
+                        startActivity(intentHome);
+                    }
+
+                    finish();
+                    return;
+                }
+            }
+        };
+        timer.start();
     }
 
     private void startLoginPage() {

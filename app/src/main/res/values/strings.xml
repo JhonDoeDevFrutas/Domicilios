@@ -1,13 +1,11 @@
 <resources>
-    <string name="app_name">DOMICILIOS</string>
+    <string name="app_name">Mi CasitaCampesina</string>
 
     <string name="large_text">
-        "Somos una empresa de software Colombiana comprometida "
-        "con el desarrollo social y tecnológico, "
-        "con mas de 15 años en el mercado, durante los cuales "
-        "hemos dearrollado el mejor sfotware capaz de apoyar"
-        "todas las actividades de la comunidad médica.\n\n"
+        "Frutas, Verduras y"
+        "otros productos a su necesidad.\n\n"
     </string>
+
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -34,5 +32,9 @@
 
     <string name="low.channel.id">channel.id.notification.low</string>
     <string name="low.channel.name">Oferta baja</string>
+    <string name="hint.numberMovil">Ingrese su numero de celular</string>
+    <string name="hint.email">Correo</string>
+    <string name="hint.provider">Proveedor</string>
+    <string name="prompt_slogan">Tu tienda de alimentación ecológica</string>
 
 </resources>

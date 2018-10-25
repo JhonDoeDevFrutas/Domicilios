@@ -162,13 +162,14 @@ public class ActivityCart extends AppCompatActivity {
         alertDialog.setPositiveButton("SI", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
-                sendMessagingWhatsapp();
+                String address = edtAddress.getText().toString().trim();
+                String comment = edtComment.getText().toString().trim();
 
                 // Checks if the device has any active internet connection.
                 if (Uweb.isNetworkConnected(ActivityCart.this)){
-                    sendNotification(edtAddress.getText().toString(),edtComment.getText().toString());
+                    sendNotification(address,comment);
                 }
+                sendMessagingWhatsapp(address,comment);
             }
         });
 
@@ -213,7 +214,7 @@ public class ActivityCart extends AppCompatActivity {
 
     }
 
-    private void sendMessagingWhatsapp() {
+    private void sendMessagingWhatsapp(String address, String comment) {
         String lcNombre = "Tío";
         String lcNumber = "+34695723938";
         //lcNumber = "+573154280732";

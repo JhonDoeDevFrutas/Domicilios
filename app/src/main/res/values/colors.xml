@@ -24,11 +24,35 @@
     <color name="colorGrey">#a6a6a6</color>
     <color name="colorGreyTransparent">#87a6a6a6</color>
     <color name="translucent_red">#80ff0000</color>
-    <color name="color_transparent">#B3000000</color>
+    <color name="color_transparent">#80000000</color> <!--50%-->
     <color name="colorGreen">#0f6534</color>
 
     <color name="colorOverlayActionBarT">#0e0d0e</color>
     <color name="colorOverlayActionBar">#FFFFFF</color>
 
+   <!--opacity code:-->
+<!--
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+-->
 
 </resources>
