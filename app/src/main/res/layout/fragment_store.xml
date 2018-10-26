@@ -13,5 +13,12 @@
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/item_store"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </FrameLayout>
