@@ -50,5 +50,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
     implementation 'com.jaredrummler:material-spinner:1.1.0'
+    implementation 'info.hoang8f:fbutton:1.0.5'
+
 }
 apply plugin: 'com.google.gms.google-services'

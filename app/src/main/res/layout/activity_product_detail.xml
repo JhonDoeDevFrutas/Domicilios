@@ -19,7 +19,7 @@
             android:layout_height="350dp"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="#0e0d0e"
+            app:contentScrim="@color/colorWhite"
             app:expandedTitleTextAppearance="@color/color_transparent">
 
             <ImageView
@@ -45,7 +45,7 @@
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnCart"
         android:src="@drawable/ic_shopping_cart"
-        android:tint="@color/colorPrimary"
+        android:tint="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="6dp"

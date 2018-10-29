@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#a20025</color>
+    <color name="colorPrimaryRed">#a20025</color>
     <color name="colorPrimary01">#125688</color>
-    <color name="colorPrimaryDark">#E80C25</color>
+    <color name="colorPrimaryDarkRed">#0e0d0e</color>
+    <color name="colorPrimaryDark02">#E80C25</color>
     <color name="colorPrimaryDark01">#125688</color>
-    <color name="colorAccent">#FF1D0D</color>
+    <color name="colorAccentRed">#FF1D0D</color>
     <color name="colorAccent01">#1d8ddf</color>
 
     <color name="colorPrimaryGreen">#004d40</color>
     <color name="colorPrimaryDarkGreen">#00251a</color>
     <color name="colorAccentGreen">#39796b</color>
+    <color name="btnPlaceOrder">#A9d440</color>
 
-    <color name="colorPrimaryGreen01">#00AA8D</color>
-    <color name="colorPrimaryDarkGreen01">#008975</color>
-    <color name="colorAccentGreen01">#00BF9A</color>
+    <color name="colorPrimary">#00AA8D</color>
+    <color name="colorPrimaryDark">#008975</color>
+    <color name="colorAccent">#00BF9A</color>
 
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>

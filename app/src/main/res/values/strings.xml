@@ -36,5 +36,6 @@
     <string name="hint.email">Correo</string>
     <string name="hint.provider">Proveedor</string>
     <string name="prompt_slogan">Tu tienda de alimentación ecológica</string>
+    <string name="prompt_place_order">Realizar Pedido</string>
 
 </resources>
